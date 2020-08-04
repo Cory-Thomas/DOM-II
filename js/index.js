@@ -28,3 +28,21 @@ let introHeader = document.querySelector('.intro h2').addEventListener('mouseent
 introHeader = document.querySelector('.intro h2').addEventListener('mouseleave', event => {
     event.target.style.backgroundColor = 'white'
 })
+
+let destinationSection = document.querySelector('.content-destination').addEventListener('mousemove', event => {
+    event.target.style.backgroundColor = '#ADD3E0'
+})
+
+let adventureHeading = document.querySelector('.inverse-content .text-content').addEventListener('mousedown', event => {
+    
+        event.target.style.backgroundColor = '#ADD3E0'
+    
+})
+
+adventureHeading = document.querySelector('.inverse-content .text-content').addEventListener('mouseup', event => {
+    event.target.style.backgroundColor = 'white'
+})
+
+let contentCopy = document.querySelector('.content-pick').addEventListener('copy', event => {
+        event.target.style.backgroundColor = '#ADD3E0' 
+})
