@@ -2,6 +2,12 @@
 let logoHeader = document.querySelector('.logo-heading').addEventListener('click', event => {
     event.target.style.backgroundColor = '#ADD3E0'
     event.target.style.color = 'white'
+    event.stopPropagation()
+})
+
+let navContainer = document.querySelector('.main-navigation').addEventListener('click', event => {
+    event.target.style.backgroundColor = '#ADD3E0'
+    event.target.style.color = 'red'
 })
 
 logoHeader = document.querySelector('.logo-heading').addEventListener('dblclick', event => {
@@ -46,3 +52,7 @@ adventureHeading = document.querySelector('.inverse-content .text-content').addE
 let contentCopy = document.querySelector('.content-pick').addEventListener('copy', event => {
         event.target.style.backgroundColor = '#ADD3E0' 
 })
+
+document.querySelector('.nav').addEventListener('click', event => {
+    event.preventDefault()
+  })
